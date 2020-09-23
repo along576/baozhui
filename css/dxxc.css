@@ -1,0 +1,22 @@
+.dxxc_container{display: none;}
+.robot{width: 90%;margin: 1rem auto;  text-align: center;font-size: 1.5rem;color: #737373;}
+.robot img{width: 5rem;}
+.robot p{padding-top: .5rem;}
+.xcdata{width: 90%;margin: auto;}
+.years_box{height: 2.4rem;line-height: 2.4rem; border-bottom: 1px solid rgba(0, 0, 0, 0.05);position: relative;}
+.years_select{border: 0;}
+.years_title,.ys_title,.other_title,.phone_title{font-size: 1.3rem;}
+.xcdata_box{width: 90%;margin: auto;padding-top: 1.2rem;}
+.years_box select{outline: none;}
+.years_box{display: flex;flex-direction: row;justify-content: space-between;}
+.select_icon img{width: 1rem;}
+.select_years_val,.input_val{color: #666666;font-size: 1.3rem;}
+.years_select_box ul li{line-height: 2.6rem;font-size: 1.2rem;}
+
+.years_box,.ys_box,.other_box,.phone_box{padding: .8rem 0;}
+.dw_wy{padding-right: .3rem;font-size: 1.2rem;}
+#select_years_ul{background-color: #ffffff;color: #666666; position: absolute;top: 2.6rem;left:0;display: none;width: 100%;padding-left: .6rem;padding-top: .4rem;}
+#select_years_ul li{width: 20%;margin: auto;padding-left: 2.3rem;}
+.ys_box,.other_box,.phone_box{height:4.5rem;line-height: 4.5rem; margin: auto; display: flex;flex-direction: row;justify-content: space-between;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+.submit_box{text-align: center; margin: 2.5rem auto;height: 4rem;}
+.submit_box button{border: none;background-color: #d84241;height: 3.6rem;width: 14rem;color: #ffffff;border-radius: .6rem;font-size: 1.2rem;outline:none}

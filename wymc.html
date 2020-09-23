@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我要买车</title>
+    <link rel="stylesheet" href="./css/buy_car.css">
+    <script src="./js/jquery-1.12.0.min.js"></script>
+
+    <script src="js/gdlb.js"></script>
+    <script src="./js/check.js"></script>
+    <link rel="stylesheet" href="./css/dxxc.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="header">
+            <div class="header_box">
+                我要买车
+            </div>
+        </div> -->
+        <div class="banner_box">
+            <div id="ban1">
+                <div class="banner">
+                    <ul class="img">
+                        <li><a href="#"><img src="images/1.png"></a></li>
+                        <li><a href="#"><img src="images/2.png"></a></li>
+                        <li><a href="#"><img src="images/3.png"></a></li>
+                    </ul>
+                    <ul class="num">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav_box">
+            <div class="nav_items">
+                <div class="nav_item1 nav_default" va="1">待嫁宝贝</div>
+                <div class="nav_item2" va="2">成交宝贝</div>
+                <div class="nav_item3" va="3">定向寻车</div>
+            </div>
+        </div>
+        <section class="buy_car_container">
+            <div class="check_box">
+                <div class="check_content">
+                    <div class="check">
+                        <div class="price">
+                            <div class="price_text">价格</div>
+                            <div class="check_icon"><img src="./images/check_icon.png"></div>
+                        </div>
+                        <div class="years">
+                            <div class="years_text">年限</div>
+                            <div class="check_icon"><img src="./images/check_icon.png"></div>
+                        </div>
+                        <div class="chexing">
+                            <div class="chexing_text">车型</div>
+                            <div class="check_icon"><img src="./images/check_icon.png"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="check_data_box check_price">
+                    <ul id="price_ul">
+                        <li>5万以内</li>
+                        <li>5-10万</li>
+                        <li>10-20万</li>
+                        <li>20-30万</li>
+                        <li>30-50万</li>
+                        <li>50万以上</li>
+                    </ul>
+                </div>
+                <div class="check_data_box check_years">
+                    <ul id="years_ul">
+                        <li>1年以内</li>
+                        <li>1-3年</li>
+                        <li>3-5年</li>
+                        <li>5-8年</li>
+                        <li>8-10年</li>
+                        <li>10以上</li>
+                    </ul>
+                </div>
+                <div class="check_data_box check_chexing">
+                    <ul id="chexing_ul">
+                        <li>微型小轿车</li>
+                        <li>紧凑型车</li>
+                        <li>中型车</li>
+                        <li>中大型车</li>
+                        <li>SUV</li>
+                        <li>皮卡</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <section class="car_container">
+                <div class="car_box">
+                    <div class="car_item">
+                        <div class="cat_left">
+                            <img src="./images/car_1.jpg" alt="">
+                        </div>
+                        <div class="car_right">
+                            <div class="car_title">雪佛兰 沃兰多 2018款 Redline530T 自...</div>
+                            <div class="car_data"><span class="date">2019年04月</span>|<span
+                                    class="km rr">6万公里</span>|<span class="pailiang rr">1.6T</span> </div>
+                            <div class="car_much"><span class="now_much">￥10.38</span><span class="wy">万</span><span
+                                    class="old_much">￥12.00</span><span class="ww">万</span></div>
+                        </div>
+                    </div>
+                    <div class="car_item">
+                        <div class="cat_left">
+                            <img src="./images/car_2.jpg" alt="">
+                        </div>
+                        <div class="car_right">
+                            <div class="car_title">起亚K3 2016款 1.6L 自动天窗版</div>
+                            <div class="car_data"><span class="date">2018年06月</span>|<span
+                                    class="km rr">9.8万公里</span>|<span class="pailiang rr">2.0T</span> </div>
+                            <div class="car_much"><span class="now_much">￥12.28</span><span class="wy">万</span><span
+                                    class="old_much">￥13.25</span><span class="ww">万</span></div>
+                        </div>
+                    </div>
+                    <div class="car_item">
+                        <div class="cat_left">
+                            <img src="./images/car_3.jpg" alt="">
+                        </div>
+                        <div class="car_right">
+                            <div class="car_title">现代 菲斯塔 2019款 280TGDi 智速版 国V</div>
+                            <div class="car_data"><span class="date">2018年11月</span>|<span
+                                    class="km rr">3.95万公里</span>|<span class="pailiang rr">1.6T</span> </div>
+                            <div class="car_much"><span class="now_much">￥13.58</span><span class="wy">万</span><span
+                                    class="old_much">￥15.00</span><span class="ww">万</span></div>
+                        </div>
+                    </div>
+
+                    <div class="car_item">
+                        <div class="cat_left">
+                            <img src="./images/car_1.jpg" alt="">
+                        </div>
+                        <div class="car_right">
+                            <div class="car_title">雪佛兰 沃兰多 2018款 Redline530T 自...</div>
+                            <div class="car_data"><span class="date">2019年04月</span>|<span
+                                    class="km rr">6万公里</span>|<span class="pailiang rr">1.6T</span> </div>
+                            <div class="car_much"><span class="now_much">￥10.38</span><span class="wy">万</span><span
+                                    class="old_much">￥12.00</span><span class="ww">万</span></div>
+                        </div>
+                    </div>
+                    <div class="car_item">
+                        <div class="cat_left">
+                            <img src="./images/car_2.jpg" alt="">
+                        </div>
+                        <div class="car_right">
+                            <div class="car_title">起亚K3 2016款 1.6L 自动天窗版</div>
+                            <div class="car_data"><span class="date">2018年06月</span>|<span
+                                    class="km rr">9.8万公里</span>|<span class="pailiang rr">2.0T</span> </div>
+                            <div class="car_much"><span class="now_much">￥12.28</span><span class="wy">万</span><span
+                                    class="old_much">￥13.25</span><span class="ww">万</span></div>
+                        </div>
+                    </div>
+                    <div class="car_item">
+                        <div class="cat_left">
+                            <img src="./images/car_3.jpg" alt="">
+                        </div>
+                        <div class="car_right">
+                            <div class="car_title">现代 菲斯塔 2019款 280TGDi 智速版 国V</div>
+                            <div class="car_data"><span class="date">2018年11月</span>|<span
+                                    class="km rr">3.95万公里</span>|<span class="pailiang rr">1.6T</span> </div>
+                            <div class="car_much"><span class="now_much">￥13.58</span><span class="wy">万</span><span
+                                    class="old_much">￥15.00</span><span class="ww">万</span></div>
+                        </div>
+                    </div>
+
+                    <div class="car_end">
+                        <p>别滑了~我也是有底线的！</p>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+    </div>
+
+    <!-- 定向寻车 -->
+    <section class="dxxc_container">
+        <div class="xc_box" style="height: 42.4rem;">
+            <div class="robot">
+                <img src="./images/jqr.png" alt="">
+                <p>告诉我们您的需求，我们为您定向寻车！</p>
+            </div>
+            <div class="xcdata">
+                <div class="xcdata_box">
+                    <!-- 年限 -->
+                    <div class="years_box">
+                        <div class="years_title" for="">年限</div>
+                        <div class="years_select_box">
+                            <div class="select_years_val" style="font-size: 1.25rem;">请选择</div>
+                            <ul id="select_years_ul">
+                                <li>不限</li>
+                                <li>1年以内</li>
+                                <li>1-3年</li>
+                                <li>3-5年</li>
+                                <li>5-8年</li>
+                                <li>8-10年</li>
+                                <li>10年以上</li>
+                            </ul>
+                        </div>
+                        <div class="select_icon"><img src="./images/check_icon.png" alt=""></div>
+                    </div>
+                    <!-- 预算 -->
+                    <div class="ys_box">
+                        <div class="ys_title">购车预算</div>
+                        <div class="ys_input_box">
+                            <input class="input_val" type="text" placeholder="请输入"
+                                style="height: 2.5rem; text-align: center;margin-left: -1.3rem;border: none;outline:none;font-size: 1.25rem;background-color: transparent;">
+                        </div>
+                        <div class="dw_wy">万元</div>
+                    </div>
+                    <!-- 其它要求 -->
+                    <div class="other_box">
+                        <div class="other_title">其它要求</div>
+                        <div class="other_input_box">
+                            <input class="other_input_val" type="text" placeholder="如4万公里以内，意向车型"
+                                style="height: 2.5rem; text-align: center;margin-left: -1.3rem;border: none;outline:none;font-size: 1.25rem;background-color: transparent;">
+                        </div>
+                        <div class="dw_wy"></div>
+                    </div>
+                    <!-- 联系电话 -->
+                    <div class="phone_box">
+                        <div class="phone_title">联系电话</div>
+                        <div class="phone_input_box">
+                            <input class="phone_input_val" type="text" placeholder="您的手机号(填写)"
+                                style="height: 2.5rem; text-align: center;margin-left: -1.3rem;border: none;outline:none;font-size: 1.25rem;background-color: transparent;">
+                        </div>
+                        <div class="dw_wy"></div>
+                    </div>
+
+                    <div class="submit_box">
+                        <button id="btn">有合适的车辆通知我</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 底部 -->
+    <div class="footer_box">
+        <div class="icon_box">
+            <div class="icon_item">
+                <div class="nav_pic">
+                    <img src="./images/icon_buy.png" alt="">
+                </div>
+                <div class="nav_text on_nav">我要买车</div>
+            </div>
+            <div class="icon_item">
+                <div class="nav_pic">
+                    <img src="./images/icon_sell.png" alt="">
+                </div>
+                <div class="nav_text">我要卖车</div>
+            </div>
+            <div class="icon_item">
+                <div class="nav_pic">
+                    <img src="./images/icon_serve.png" alt="">
+                </div>
+                <div class="nav_text">宝骓服务</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-1.12.0.min.js"></script>
+<script>
+    $(function () {
+        $(".select_icon").click(function () {
+
+            var check = $("#select_years_ul").css("display");
+            if (check == "none") {
+                $("#select_years_ul").css("display", "block");
+                $("ul#select_years_ul").on("click", "li", function () {
+                    var price_text = $(this).text();
+                    $(".select_years_val").text(price_text);
+                    $("#select_years_ul").css("display", "none");
+                });
+            } else if (check == "block") {
+                $("#select_years_ul").css("display", "none");
+            }
+        });
+        $("#btn").click(function () {
+            var year = $(".select_years_val").text();
+            var ys = $(".input_val").val();
+            var other = $(".other_input_val").val();
+            var phone = $(".phone_input_val").val();
+            function isPhoneNo(phone) {
+                var pattern = /^1[34578]\d{9}$/;
+                return pattern.test(phone);
+            }
+            if (year == '请选择' || ys == "" || other == "" || phone == "") {
+                alert("请输入或填写相应信息");
+            } else {
+                if ((isPhoneNo($.trim(phone)) == false)) {
+                    alert("手机号码不正确,请重新输入");
+                    $('.phone_input_val').focus();
+                }
+                else {
+                    alert(year + ys + other + phone);
+                }
+            }
+        })
+    })
+</script>
+
+</html>

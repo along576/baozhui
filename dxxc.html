@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定向寻车</title>
+  <link rel="stylesheet" href="./css/buy_car.css">
+  <link rel="stylesheet" href="./css/dxxc.css">
+
+
+</head>
+
+<body>
+
+
+  <div class="xc_container">
+    <div class="robot">
+      <img src="./images/jqr.png" alt="">
+      <p>告诉我们您的需求，我们为您定向寻车！</p>
+    </div>
+    <div class="xcdata">
+      <div class="xcdata_box">
+        <!-- 年限 -->
+        <div class="years_box">
+          <div class="years_title" for="">年限</div>
+          <div class="years_select_box">
+            <div class="select_years_val">请选择</div>
+            <ul id="select_years_ul">
+              <li>不限</li>
+              <li>1年以内</li>
+              <li>1-3年</li>
+              <li>3-5年</li>
+              <li>5-8年</li>
+              <li>8-10年</li>
+              <li>10年以上</li>
+            </ul>
+          </div>
+          <div class="select_icon"><img src="./images/check_icon.png" alt=""></div>
+        </div>
+        <!-- 预算 -->
+        <div class="ys_box">
+          <div class="ys_title">购车预算</div>
+          <div class="ys_input_box">
+            <input class="input_val" type="text" placeholder="请输入"
+              style="height: 2.5rem; text-align: center;margin-left: -1.3rem;border: none;outline:none;font-size: 1rem;background-color: transparent;">
+          </div>
+          <div class="dw_wy">万元</div>
+        </div>
+        <!-- 其它要求 -->
+        <div class="other_box">
+          <div class="other_title">其它要求</div>
+          <div class="other_input_box">
+            <input class="other_input_val" type="text" placeholder="如4万公里以内，意向车型"
+              style="height: 2.5rem; text-align: center;margin-left: -1.3rem;border: none;outline:none;font-size: 1rem;background-color: transparent;">
+          </div>
+          <div class="dw_wy"></div>
+        </div>
+        <!-- 联系电话 -->
+        <div class="phone_box">
+          <div class="phone_title">联系电话</div>
+          <div class="phone_input_box">
+            <input class="phone_input_val" type="text" placeholder="您的手机号(填写)"
+              style="height: 2.5rem; text-align: center;margin-left: -1.3rem;border: none;outline:none;font-size: 1rem;background-color: transparent;">
+          </div>
+          <div class="dw_wy"></div>
+        </div>
+
+        <div class="submit_box">
+          <button id="btn">有合适的车辆通知我</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</body>
+<script src="./js/jquery-1.12.0.min.js"></script>
+<script>
+  $(function () {
+    $(".select_icon").click(function () {
+
+      var check = $("#select_years_ul").css("display");
+      if (check == "none") {
+        $("#select_years_ul").css("display", "block");
+        $("ul#select_years_ul").on("click", "li", function () {
+          var price_text = $(this).text();
+          $(".select_years_val").text(price_text);
+          $("#select_years_ul").css("display", "none");
+        });
+      } else if (check == "block") {
+        $("#select_years_ul").css("display", "none");
+      }
+    });
+    $("#btn").click(function () {
+      var year = $(".select_years_val").text();
+      var ys = $(".input_val").val();
+      var other = $(".other_input_val").val();
+      var phone = $(".phone_input_val").val();
+      function isPhoneNo(phone) {
+        var pattern = /^1[34578]\d{9}$/;
+        return pattern.test(phone);
+      }
+      if(year == '请选择' || ys == "" || other == "" || phone == ""){
+        alert("请输入或填写相应信息");
+      }else{
+        if ((isPhoneNo($.trim(phone)) == false)) {
+          alert("手机号码不正确,请重新输入");
+          $('.phone_input_val').focus();
+        }
+        else{
+          alert(year+ys+other+phone);
+        }      
+      }
+    })
+  })
+</script>
+
+</html>
